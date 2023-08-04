@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import { Table } from 'semantic-ui-react';
 
-
 /**
  * View description block.
  * @module components/manage/Blocks/Description/View
@@ -58,7 +57,23 @@ const View = (props) => {
             </Table.Row>
           </Table.Header>
           <Table.Body>
-            {response.data?.map((item, i) => {
+          <h2>Soil Moisture Sensors</h2>
+          {response.data
+                ?.filter((plantwaterer) =>
+                  plantwaterer.entity_id.includes('sensor.soil_moisture'),
+                ).map((item, i) => {
+              return (
+                <tr key={i}>
+                  <td>{item.entity_id}</td>
+                  <td>{item.state}</td>
+                </tr>
+              );
+            })}
+            <h2>Water Pump Relays</h2>
+            {response.data
+                ?.filter((plantwaterer) =>
+                  plantwaterer.entity_id.includes('sensor.water_pump'),
+                ).map((item, i) => {
               return (
                 <tr key={i}>
                   <td>{item.entity_id}</td>
