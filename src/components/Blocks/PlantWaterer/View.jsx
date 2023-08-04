@@ -47,7 +47,7 @@ const View = (props) => {
     return (
       <div className="container">
         <div className="plantwatererinfo">
-        <h2>Soil Moisture Sensors</h2>
+          <h2>Soil Moisture Sensors</h2>
           <Table celled>
             <Table.Header>
               <Table.Row>
@@ -70,7 +70,7 @@ const View = (props) => {
                 })}
             </Table.Body>
           </Table>
-        <h2>Water Pump Relays</h2>
+          <h2>Water Pump Relays</h2>
           <Table celled>
             <Table.Header>
               <Table.Row>
@@ -78,7 +78,7 @@ const View = (props) => {
                 <th>State</th>
               </Table.Row>
             </Table.Header>
-            <Table.Body>              
+            <Table.Body>
               {response.data
                 ?.filter((plantwaterer) =>
                   plantwaterer.entity_id.includes('sensor.water_pump'),
