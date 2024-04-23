@@ -1,5 +1,5 @@
 import '@plone/volto/config';
-import customBlocks from '@Fosten/volto-home-assistant/components/Blocks/customBlocks';
+import customBlocks from '@fosten/volto-home-assistant/components/Blocks/customBlocks';
 
 const applyConfig = (config) => {
   config.blocks = {

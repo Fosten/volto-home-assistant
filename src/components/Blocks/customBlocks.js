@@ -1,5 +1,5 @@
-import PlantWatererView from '@Fosten/volto-home-assistant/components/Blocks/PlantWaterer/View';
-import PlantWatererEdit from '@Fosten/volto-home-assistant/components/Blocks/PlantWaterer/Edit';
+import PlantWatererView from '@fosten/volto-home-assistant/components/Blocks/PlantWaterer/View';
+import PlantWatererEdit from '@fosten/volto-home-assistant/components/Blocks/PlantWaterer/Edit';
 import icon from '@plone/volto/icons/list-bullet.svg';
 
 const customBlocks = {
