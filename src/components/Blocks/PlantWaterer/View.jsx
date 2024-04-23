@@ -17,20 +17,14 @@ import { Table } from 'semantic-ui-react';
 const View = (props) => {
   const [response, setState] = useState({});
   async function myResponse() {
-    window.localStorage.setItem(
-      `token`,
-      JSON.stringify(window.env.RAZZLE_HOMEASSISTANT_ACCESS_TOKEN),
-    );
+    window.localStorage.setItem(`token`, JSON.stringify(window.env.RAZZLE_HOMEASSISTANT_ACCESS_TOKEN));
     try {
-      const response = await axios.get(
-        `${window.env.RAZZLE_HOMEASSISTANT_API_HOST}:${window.env.RAZZLE_HOMEASSISTANT_API_PORT}/api/states`,
-        {
-          headers: {
-            Authorization: `Bearer ${window.env.RAZZLE_HOMEASSISTANT_ACCESS_TOKEN}`,
-            'Content-Type': 'application/json',
-          },
+      const response = await axios.get(`${window.env.RAZZLE_HOMEASSISTANT_API_HOST}:${window.env.RAZZLE_HOMEASSISTANT_API_PORT}/api/states`, {
+        headers: {
+          Authorization: `Bearer ${window.env.RAZZLE_HOMEASSISTANT_ACCESS_TOKEN}`,
+          'Content-Type': 'application/json',
         },
-      );
+      });
       setState(response);
       window.localStorage.setItem(`response`, JSON.stringify(response));
     } catch (err) {
@@ -57,9 +51,7 @@ const View = (props) => {
             </Table.Header>
             <Table.Body>
               {response.data
-                ?.filter((plantwaterer) =>
-                  plantwaterer.entity_id.includes('sensor.soil_moisture'),
-                )
+                ?.filter((plantwaterer) => plantwaterer.entity_id.includes('sensor.soil_moisture'))
                 .map((item, i) => {
                   return (
                     <tr key={i}>
@@ -80,9 +72,7 @@ const View = (props) => {
             </Table.Header>
             <Table.Body>
               {response.data
-                ?.filter((plantwaterer) =>
-                  plantwaterer.entity_id.includes('sensor.water_pump'),
-                )
+                ?.filter((plantwaterer) => plantwaterer.entity_id.includes('sensor.water_pump'))
                 .map((item, i) => {
                   return (
                     <tr key={i}>
