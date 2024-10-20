@@ -1,6 +1,6 @@
 {
   "name": "volto-home-assistant",
-  "version": "1.0.0-alpha.0",
+  "version": "2.0.0-alpha.0",
   "description": "Volto add-on to pull data from the Home Assistant API",
   "main": "src/index.js",
   "license": "MIT",
@@ -26,7 +26,9 @@
     "release-major-alpha": "release-it major --preRelease=alpha",
     "release-alpha": "release-it --preRelease=alpha"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "*"
+  },
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
