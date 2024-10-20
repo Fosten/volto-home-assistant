@@ -11,3 +11,4 @@ node_modules
 results
 pnpm-lock.yaml
 /public
+.env

@@ -1,4 +1,4 @@
-# volto-home-assistant (volto-home-assistant)
+# Volto Home Assistant (volto-home-assistant)
 
 Volto add-on to pull data from the Home Assistant API
 
@@ -10,6 +10,21 @@ Volto add-on to pull data from the Home Assistant API
 ## Features
 
 <!-- List your awesome features here -->
+
+- View the state of Soil Moisture Sensors
+- View the state of Water Pump Relays
+
+## Environment Variables
+### Local testing
+Create a .env file in the project root.
+### Remote deployment
+Modify the ENV_FILE Github environment secret of the Plone Project that deploys this add-on.
+
+```shell
+RAZZLE_HOMEASSISTANT_API_HOST=https://url
+RAZZLE_HOMEASSISTANT_API_PORT=port
+RAZZLE_HOMEASSISTANT_ACCESS_TOKEN=token
+```
 
 ## Installation
 
