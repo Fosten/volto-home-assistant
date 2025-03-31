@@ -17,10 +17,6 @@ import { Table } from 'semantic-ui-react';
 const View = (props) => {
   const [response, setState] = useState({});
   async function myResponse() {
-    window.localStorage.setItem(
-      `token`,
-      JSON.stringify(window.env.RAZZLE_HOMEASSISTANT_ACCESS_TOKEN),
-    );
     try {
       const response = await axios.get(
         `${window.env.RAZZLE_HOMEASSISTANT_API_HOST}:${window.env.RAZZLE_HOMEASSISTANT_API_PORT}/api/states`,
@@ -32,7 +28,6 @@ const View = (props) => {
         },
       );
       setState(response);
-      window.localStorage.setItem(`response`, JSON.stringify(response));
     } catch (err) {
       // eslint-disable-next-line no-console
       console.log(err);
