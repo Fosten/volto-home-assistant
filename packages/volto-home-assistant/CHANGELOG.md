@@ -13,19 +13,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- towncrier release notes start -->
 
-## Unreleased
+## [Unreleased]
 
 - Add Dependabot [fosten]
 - Bump Volto from 18.10.1 to 19.0.0-alpha.4 [fosten]
 
-## 2.1.0 (2025-03-31)
+## [2.1.0] (2025-03-31)
 
 - Remove window.localStorage [fosten]
 - Update CHANGELOG.md [fosten]
 - Bump package.json versions to 2.1.0 [fosten]
 - Bump Volto from 18.0.0-alpha.47 to 18.10.1 [fosten]
 
-## 2.0.0 (2024-10-28)
+## [2.0.0] (2024-10-28)
 
 - Bump Node from 20 to 22 in workflows [fosten]
 - Update .eslintrc.js and storybook/main.js [fosten]
@@ -33,20 +33,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add axios dependency, move index.js, i18n [fosten]
 - Refactor using cookieplone [fosten]
 
-## 1.0.0 (2024-10-13)
+## [1.0.0] (2024-10-13)
 
 - Add CHANGELOG.md [fosten]
 - Add README.md [fosten]
 
-## 0.3.0 (2024-04-23)
+## [0.3.0] (2024-04-23)
 
 - Remove capital letter @Fosten to @fosten [fosten]
 
-## 0.2.0 (2023-08-04)
+## [0.2.0] (2023-08-04)
 
 - Add filter for soil_moisture and water_pump [fosten]
 - Add PlantWaterer Block [fosten]
 
-## 0.1.0 (2023-05-01)
+## [0.1.0] (2023-05-01)
 
 - Initial commit [fosten]
+
+[Unreleased]: https://github.com/Fosten/volto-home-assistant/compare/2.1.0...main
+[2.1.0]: https://github.com/Fosten/volto-home-assistant/releases/tag/2.1.0
+[2.0.0]: https://github.com/Fosten/volto-home-assistant/releases/tag/2.0.0
+[1.0.0]: https://github.com/Fosten/volto-home-assistant/releases/tag/1.0.0
+[0.3.0]: https://github.com/Fosten/volto-home-assistant/releases/tag/0.3.0
+[0.2.0]: https://github.com/Fosten/volto-home-assistant/releases/tag/0.2.0
+[0.1.0]: https://github.com/Fosten/volto-home-assistant/releases/tag/0.1.0
+[fosten]: https://github.com/Fosten
